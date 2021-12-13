@@ -1,0 +1,11 @@
+{
+  "name": "hostel-management-portal",
+  "version": "1.0.0",
+  "description": "A portal to manage all hostel related affairs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
