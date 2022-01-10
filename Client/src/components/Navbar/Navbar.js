@@ -8,10 +8,20 @@ function Navbar() {
  
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const [navbar,setNavbar]=useState(false)
+  const changeBackground=()=>{
+    console.log(window.scrollY)
+   if(window.scrollY>=50){
+     setNavbar(true)
+   }else{
+     setNavbar(false)
+   }
 
+  }
+  window.addEventListener('scroll',changeBackground)
   return (
     <>
-      <nav className='navbar'>
+      <nav className={navbar ? 'navbar active' : 'navbar'}>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           LOGO
           <i className='fab fa-firstdraft' />
@@ -41,7 +51,8 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Contact Us
+              Photo Gallery
+            
             </Link>
           </li>
           <li>

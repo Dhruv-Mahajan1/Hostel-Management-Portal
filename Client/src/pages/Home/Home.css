@@ -1,39 +1,50 @@
-.home-container{
-    background-image: url('../../assets/hostel.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    transition: 0.5s;
+.home-container {
+  background-image: url("../../assets/hostel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  /* padding-top: 15%;
+  padding-bottom: 15%; */
+  transition: 0.5s;
+  object-fit: cover;
+}
+.heading {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.typewriter h1 {
+  width: 70%;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 3px 5px 2px #474747;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid red; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.typewriter h1 {
-    width: 70%;
-    font-size: 60px;
-    color: #FFFFFF;
-    text-shadow: 3px 5px 2px #474747;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid red; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .05em; /* Adjust as needed */
-    animation: 
-      typing 4s steps(40, end),
-      blink-caret .75s step-end infinite;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 60% }
+  to {
+    width: 60%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    60% { border-color: red; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  60% {
+    border-color: red;
+  }
+}
