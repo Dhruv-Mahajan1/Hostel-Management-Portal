@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext);
+
+.about-us-container{
+    margin: 10px;
+    padding: 10px;
+}
+
+.about-us-heading{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+    color: rgb(94, 88, 88);
+    
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    text-decoration: underline 10px yellow;
+}
+.about-us-block{
+    width: 100%;
+    display: flex;
+}
+
+.about-us-image{
+    width: 50%;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.image{
+    width : 80%;
+    height: auto;
+    align-items: center;
+    transition:0.25s;
+}
+
+.image:hover{
+    opacity: 0.5;
+    transition:0.25s;
+    background-color:black;
+}
+
+.about-us-text{
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
