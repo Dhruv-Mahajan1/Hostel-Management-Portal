@@ -1,5 +1,6 @@
-.home-container{
+.home{
     background-image: url('../../assets/hostel.jpg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align-items: center;
