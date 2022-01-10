@@ -1,0 +1,56 @@
+.carousel-container{
+    width: 100%;
+    background-image: url('../../assets/hostel.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding:1%;
+}
+
+.carousel-container-text{
+    padding: 1%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 5px 2px #474747;
+    font-size: 35px;
+}
+
+.carousel{
+    width: 70%;
+    justify-content: center;
+    padding-bottom: 2%;
+    align-items: center;
+    height: 400px;
+    margin: 2%;
+    margin-left: 15%;
+    background: url('../../assets/hostel.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite linear;
+}
+
+@keyframes slide{
+    0%{
+        background: url('../../assets/hostel.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background: url('https://i.pinimg.com/originals/15/a7/a8/15a7a873c0e04fcfcae5c6be5365818f.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background: url('https://wallpaperforu.com/wp-content/uploads/2021/06/Wallpaper-4k-Dark-Blue-Lines-Grid-Lines-Backgrounds-P2-scaled.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background: url('https://wallpaperaccess.com/full/2109.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
